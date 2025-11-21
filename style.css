@@ -466,6 +466,9 @@ justify-content: center;
   max-width: var(--mobile-max-width);
   }
 
+  html, body{
+   overflow-x: hidden;
+  }
 /* ----- NAV ----- */
   nav {
     flex-direction: row;
@@ -512,7 +515,7 @@ justify-content: center;
     height: calc(100vh);
     justify-content: center;
     gap: 1.5rem;
-    padding-left: 10px;
+    padding-left: 0px;
     z-index: 10;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -571,6 +574,9 @@ justify-content: center;
   padding-top: 2rem;
   padding-bottom: 1rem;
   }
+  .hero__title{
+    padding-right: 0;
+  }
 
   /* ------ ABOUT ----- */
   .about__container{
@@ -598,7 +604,6 @@ justify-content: center;
   justify-content: center;
   max-height: 25%;
   max-width: 100%;
-  padding-left: 3rem;
   }
   .ad__content{
   text-align: center;
@@ -648,7 +653,8 @@ justify-content: center;
 }
 
 .testimony__image img{
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   right: 0;
 }
 
